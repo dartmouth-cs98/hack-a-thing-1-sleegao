@@ -1,0 +1,153 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'create-react-native-app' ]
+2 info using npm@2.11.2
+3 info using node@v0.12.6
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'create-react-native-app', null ]
+7 verbose cache add spec create-react-native-app
+8 silly cache add parsed spec { raw: 'create-react-native-app',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'create-react-native-app',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: '*',
+8 silly cache add   type: 'range' }
+9 silly addNamed create-react-native-app@*
+10 verbose addNamed "*" is a valid semver range for create-react-native-app
+11 silly addNameRange { name: 'create-react-native-app', range: '*', hasData: false }
+12 silly mapToRegistry name create-react-native-app
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/create-react-native-app
+16 verbose addNameRange registry:https://registry.npmjs.org/create-react-native-app not in flight; fetching
+17 verbose get https://registry.npmjs.org/create-react-native-app not expired, no request
+18 silly addNameRange number 2 { name: 'create-react-native-app', range: '*', hasData: true }
+19 silly addNameRange versions [ 'create-react-native-app',
+19 silly addNameRange   [ '0.0.0',
+19 silly addNameRange     '0.0.1',
+19 silly addNameRange     '0.0.2',
+19 silly addNameRange     '0.0.3',
+19 silly addNameRange     '0.0.4',
+19 silly addNameRange     '0.0.5',
+19 silly addNameRange     '0.0.6',
+19 silly addNameRange     '1.0.0-rc.0',
+19 silly addNameRange     '1.0.0' ] ]
+20 silly addNamed create-react-native-app@1.0.0
+21 verbose addNamed "1.0.0" is a plain semver version for create-react-native-app
+22 silly cache afterAdd create-react-native-app@1.0.0
+23 verbose afterAdd /Users/jeffreygao/.npm/create-react-native-app/1.0.0/package/package.json not in flight; writing
+24 verbose afterAdd /Users/jeffreygao/.npm/create-react-native-app/1.0.0/package/package.json written
+25 silly install resolved [ { name: 'create-react-native-app',
+25 silly install resolved     version: '1.0.0',
+25 silly install resolved     description: 'Create React Native apps with no build configuration.',
+25 silly install resolved     license: 'BSD-3-Clause',
+25 silly install resolved     keywords: [ 'react-native', 'react' ],
+25 silly install resolved     homepage: 'https://github.com/react-community/create-react-native-app',
+25 silly install resolved     bugs: { url: 'https://github.com/react-community/create-react-native-app' },
+25 silly install resolved     preferGlobal: true,
+25 silly install resolved     engines: { node: '>=6' },
+25 silly install resolved     files: [ 'build' ],
+25 silly install resolved     bin: { 'create-react-native-app': './build/index.js' },
+25 silly install resolved     scripts: { start: 'taskr', build: 'taskr babel' },
+25 silly install resolved     dependencies:
+25 silly install resolved      { 'babel-runtime': '^6.9.2',
+25 silly install resolved        chalk: '^2.0.1',
+25 silly install resolved        'cross-spawn': '^5.1.0',
+25 silly install resolved        'fs-extra': '^4.0.0',
+25 silly install resolved        minimist: '^1.2.0',
+25 silly install resolved        'path-exists': '^3.0.0',
+25 silly install resolved        semver: '^5.0.3',
+25 silly install resolved        'source-map-support': '^0.4.1' },
+25 silly install resolved     devDependencies:
+25 silly install resolved      { '@taskr/babel': '^1.0.6',
+25 silly install resolved        '@taskr/clear': '^1.0.6',
+25 silly install resolved        '@taskr/esnext': '^1.0.0',
+25 silly install resolved        '@taskr/shell': '^1.0.6',
+25 silly install resolved        '@taskr/watch': '^1.0.6',
+25 silly install resolved        'babel-plugin-add-module-exports': '^0.2.1',
+25 silly install resolved        'babel-plugin-transform-flow-strip-types': '^6.8.0',
+25 silly install resolved        'babel-plugin-transform-runtime': '^6.9.0',
+25 silly install resolved        'babel-preset-es2015': '^6.9.0',
+25 silly install resolved        'babel-preset-stage-1': '^6.5.0',
+25 silly install resolved        taskr: '^1.0.6' },
+25 silly install resolved     _id: 'create-react-native-app@1.0.0',
+25 silly install resolved     _shasum: 'fc6046f4407bde2727ce0c4eb1354bb1a8c0f9e6',
+25 silly install resolved     _from: 'create-react-native-app@*',
+25 silly install resolved     _npmVersion: '4.6.1',
+25 silly install resolved     _nodeVersion: '7.9.0',
+25 silly install resolved     _npmUser: { name: 'brentvatne', email: 'brentvatne@gmail.com' },
+25 silly install resolved     dist:
+25 silly install resolved      { shasum: 'fc6046f4407bde2727ce0c4eb1354bb1a8c0f9e6',
+25 silly install resolved        tarball: 'https://registry.npmjs.org/create-react-native-app/-/create-react-native-app-1.0.0.tgz' },
+25 silly install resolved     maintainers:
+25 silly install resolved      [ [Object],
+25 silly install resolved        [Object],
+25 silly install resolved        [Object],
+25 silly install resolved        [Object],
+25 silly install resolved        [Object],
+25 silly install resolved        [Object],
+25 silly install resolved        [Object],
+25 silly install resolved        [Object],
+25 silly install resolved        [Object],
+25 silly install resolved        [Object],
+25 silly install resolved        [Object] ],
+25 silly install resolved     _npmOperationalInternal:
+25 silly install resolved      { host: 's3://npm-registry-packages',
+25 silly install resolved        tmp: 'tmp/create-react-native-app-1.0.0.tgz_1500939246040_0.21595290792174637' },
+25 silly install resolved     directories: {},
+25 silly install resolved     _resolved: 'https://registry.npmjs.org/create-react-native-app/-/create-react-native-app-1.0.0.tgz',
+25 silly install resolved     readme: 'ERROR: No README data found!' } ]
+26 info install create-react-native-app@1.0.0 into /usr/local/lib
+27 info installOne create-react-native-app@1.0.0
+28 verbose installOne of create-react-native-app to /usr/local/lib not in flight; installing
+29 verbose lock using /Users/jeffreygao/.npm/_locks/create-react-native-app-17cc25149a6cc763.lock for /usr/local/lib/node_modules/create-react-native-app
+30 warn engine create-react-native-app@1.0.0: wanted: {"node":">=6"} (current: {"node":"0.12.6","npm":"2.11.2"})
+31 silly install write writing create-react-native-app 1.0.0 to /usr/local/lib/node_modules/create-react-native-app
+32 verbose unbuild lib/node_modules/create-react-native-app
+33 silly gentlyRm /usr/local/lib/node_modules/create-react-native-app is being purged from base /usr/local
+34 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/create-react-native-app
+35 verbose tar unpack /Users/jeffreygao/.npm/create-react-native-app/1.0.0/package.tgz
+36 verbose tar unpacking to /usr/local/lib/node_modules/create-react-native-app
+37 silly gentlyRm /usr/local/lib/node_modules/create-react-native-app is being purged
+38 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/create-react-native-app
+39 silly gunzTarPerm modes [ '755', '644' ]
+40 error tar.unpack untar error /Users/jeffreygao/.npm/create-react-native-app/1.0.0/package.tgz
+41 verbose unlock done using /Users/jeffreygao/.npm/_locks/create-react-native-app-17cc25149a6cc763.lock for /usr/local/lib/node_modules/create-react-native-app
+42 verbose fstream_path /usr/local/lib/node_modules/create-react-native-app
+43 verbose fstream_type Directory
+44 verbose fstream_class DirWriter
+45 verbose stack Error: EACCES, mkdir '/usr/local/lib/node_modules/create-react-native-app'
+45 verbose stack     at Error (native)
+46 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25
+46 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53
+46 verbose fstream_stack FSReqWrap.oncomplete (fs.js:95:15)
+47 verbose cwd /Users/jeffreygao/repos/hack-a-thing-1-sleegao
+48 error Darwin 16.7.0
+49 error argv "node" "/usr/local/bin/npm" "install" "-g" "create-react-native-app"
+50 error node v0.12.6
+51 error npm  v2.11.2
+52 error path /usr/local/lib/node_modules/create-react-native-app
+53 error code EACCES
+54 error errno -13
+55 error Error: EACCES, mkdir '/usr/local/lib/node_modules/create-react-native-app'
+55 error     at Error (native)
+55 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/create-react-native-app']
+55 error   errno: -13,
+55 error   code: 'EACCES',
+55 error   path: '/usr/local/lib/node_modules/create-react-native-app',
+55 error   fstream_type: 'Directory',
+55 error   fstream_path: '/usr/local/lib/node_modules/create-react-native-app',
+55 error   fstream_class: 'DirWriter',
+55 error   fstream_stack:
+55 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25',
+55 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53',
+55 error      'FSReqWrap.oncomplete (fs.js:95:15)' ] }
+56 error Please try running this command again as root/Administrator.
+57 verbose exit [ -13, true ]
+58 verbose unbuild lib/node_modules/create-react-native-app
+59 silly gentlyRm /usr/local/lib/node_modules/create-react-native-app is being purged from base /usr/local
+60 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/create-react-native-app
