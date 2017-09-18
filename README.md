@@ -7,3 +7,7 @@ This project incorporates the various things outlined in the basic Facebook Reac
 ## Contributions
 
 The majority of this project was partner coded, with the two of us taking turns writing the code for changes we made. 
+
+## Difficulties
+
+We ran into some initial trouble creating and running the React Native project. One workaround we needed was runing ```yarn start``` rather than ```npm start``` which the tutorial suggested. 
