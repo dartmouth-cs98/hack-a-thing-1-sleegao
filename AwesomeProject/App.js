@@ -1,13 +1,14 @@
 import React from 'react';
 
-import { StyleSheet, Text, View, ScrollView, Image, Button } from 'react-native';
+import { StyleSheet, Text, TextInput, View, ScrollView, Image, Button } from 'react-native';
 
 export default class App extends React.Component {
   constructor(props){
     super(props)
     this.state = { 
     	showImage: true,
-    	blink: true
+    	blink: true, 
+      text: 'Jeff'
     };
 
     this.toggleBlinking = this.toggleBlinking.bind(this);
@@ -58,11 +59,10 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={[{alignItems: 'center'}, {height: 400, width: '100%'}]}>
-    		<ScrollView>
-    			<View style={styles.names}>
-		        <Greeting name='Jeff'/>
-	  	      <Greeting name='Sam'/>
-		      </View>
+        <View style={styles.names}>
+          <Greeting name={this.state.text} />
+        </View>
+    		<ScrollView style={[{height: 220}, {position: 'relative'}]}>
 	        { this.renderImage() }
         </ScrollView>
         <Button 
@@ -70,6 +70,11 @@ export default class App extends React.Component {
         	title='Toggle Blinking'
         	style={[{position: 'absolute'}, {bottom: 0}]}
       	/>
+        <TextInput
+          style={{height: 40}}
+          placeholder="Your name here"
+          onChangeText={text => this.setState({text})} 
+        />
       </View>
     );
   };
@@ -78,14 +83,15 @@ export default class App extends React.Component {
 class Greeting extends React.Component {
   render() {
     return (
-      <Text>Hello {this.props.name}!</Text>
+      <Text style={{textAlign: 'center'}}>Hello {this.props.name}!</Text>
     )
   }
 }
 
 const styles = StyleSheet.create({
 	names: {
-		marginTop: '25%'
+		marginTop: '25%',
+    marginBottom: 20
 	},
   container: {
   	flexDirection: 'row',
