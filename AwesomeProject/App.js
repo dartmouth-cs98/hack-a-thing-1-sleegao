@@ -5,9 +5,9 @@ import { StyleSheet, Text, TextInput, View, ScrollView, Image, Button } from 're
 export default class App extends React.Component {
   constructor(props){
     super(props)
-    this.state = { 
+    this.state = {
     	showImage: true,
-    	blink: true, 
+    	blink: false,
       text: 'Jeff'
     };
 
@@ -65,16 +65,17 @@ export default class App extends React.Component {
     		<ScrollView style={[{height: 220}, {position: 'relative'}]}>
 	        { this.renderImage() }
         </ScrollView>
-        <Button 
-        	onPress={this.toggleBlinking} 
+        <Button
+        	onPress={this.toggleBlinking}
         	title='Toggle Blinking'
         	style={[{position: 'absolute'}, {bottom: 0}]}
       	/>
         <TextInput
           style={{height: 40}}
           placeholder="Your name here"
-          onChangeText={text => this.setState({text})} 
+          onChangeText={text => this.setState({text})}
         />
+        <Counter />
       </View>
     );
   };
@@ -84,6 +85,42 @@ class Greeting extends React.Component {
   render() {
     return (
       <Text style={{textAlign: 'center'}}>Hello {this.props.name}!</Text>
+    )
+  }
+}
+
+class Counter extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      count: 123
+    }
+
+    this.increment = this.increment.bind(this);
+    this.decrement = this.decrement.bind(this);
+    this.view = this.view.bind(this);
+  }
+
+
+  increment() {
+    this.setState({count: this.count + 1 });
+  }
+
+  decrement() {
+    this.setState({count: this.count - 1 });
+  }
+
+  view() {
+    return this.count
+  }
+
+  render() {
+    return (
+      <View>
+        <Button onPress={this.increment} title="Increment" />
+        <Button onPress={this.decrement} title="Decrement" />
+        <Text>{this.view()}</Text>
+      </View>
     )
   }
 }
